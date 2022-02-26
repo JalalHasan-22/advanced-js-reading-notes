@@ -83,3 +83,27 @@ There are three different types of data modeling:
 3. What are you most excited about trying to implement or see how it works?
 
 - how to design and implement a nosql database, and whar is a database management system and what is it used for ?
+
+---
+
+## SQL vs NoSQL
+
+In the word of databases, we have two main types, the **_SQL_** & **_NOSQL_**
+
+1. SQL: It stands for structured query language, where you can use specific queries to perform actions on the data in the database. This type of databases sorts data in a table form containing n number of row, where each row represents a record of data. the data have a schema whic is some sort of structure that you need to adhere to. for example, if you have a field in your schema called name, then all of the record must have the name field associated with it, it can be empy yes, but it has to be there. this type of databases relies on what's called relations, which means that you can asoociate records stored in different tables by building relations, this is very useful in the case that your application is having a lot of write requests, the data will be stored in one place, so you don't have to update it but only in that table.
+   SQL databses can only be scalled vertically, which in terms means that we can only increase the computing power for the database server, which means that scalling is limited to the amount of resources or computing power that the server have.
+   some examples on SQL databases are: MYSQL, Oracle, IBM i, MS-SQL, MariaDB and many more.
+
+2. NOSQL: It stands for non-relational databases, where we have zero or very few relations between data collections, yes collections, not tables. this type of databases relies on storing huge amounts of data all in one place in collections of key value pairs, graph databases, documents or wide-column stores.
+   in the case of NOSQL databases, it can be scanned in both horizontally and vertically, horizontal scalling means adding more database servers to reduce the load on each single one of them. this type of databases is great when you have alot of read requests on the database server. some examples on NOSQL databases are: MongoDB, CouchDB, AWS DynamoDB and many more.
+
+When it comes to decide what type of database shall I use for my application, there is no correct answer, it simply depends on your needs, most of the large applications or websites uses hybrid systems, which means that there are implentation of both SQL and NOSQL databases in different parts of their application, depending on the need.
+so if you have an application with a lot of writing requests, and those requests gets updated so frequently, then NOSQL will not be a good choice for you. on the other side, if you have an application with so many read requests, then the best option will be the NOSQL, as scalling is much easier and handle a larg load of this type of requests.
+
+## sequelize
+
+it is a promise-based Node.JS ORM (object relational mapping) for multiple SQL databases such as, SQLite, postgressql, MYSQL and more.
+ORM at a high level is a technique used in computer programming for converting between incompatible type systems using object-oriented programming language.
+No we can go by the book and say that some of it's feature are: supporting solid data transaction, relations, eager & lazy loading, Or; we can say that is allows us to write less code and more cinsistent code, you can mostly avoid writing SQL queries.
+one very big advantage that Sequelize provides, it allows you to switch to a different Database system without having to re-write your queries logic.
+Sequelize is an open source ORM for node.JS that I'm really looking forward to understand and use it more.
