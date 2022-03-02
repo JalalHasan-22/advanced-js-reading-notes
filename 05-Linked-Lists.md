@@ -25,8 +25,29 @@ We have three types of linked lists:
 | Allocates a contigueous chunck of data at the time of creation | Non-contiguous locations, only allocates as much space as needed |
 | Helpful if you know the size of the of the list                | helpful if the size is unknown                                   |
 
+---
+
+## Big O
+
+Big-O is a standard mathematical notation that shows how efficient an algorithm is in the worst-case scenario relative to its input size. To measure the efficiency of an algorithm, we need to consider two things:
+
+Time Complexity: How much time does it take to run completely?
+Space Complexity: How much extra space does it require in the process?
+Big-O notation captures the upper bound to show how much time or space an algorithm would require in the worst case scenario as the input size grows. It is usually written as:
+
+f(n) = O(inputSize)f(n)=O(inputSize)
+
+To find Big-O notation, follow two steps:
+
+Discard the leading constants
+Ignore the lower order terms
+After performing the above two steps on the time complexity that we just calculated, we can estimate the Big-O notation as:
+
+=> 2n+4=>2n+4 => n+4=>n+4 => n=>n => O(n)=>O(n)
+
 #### Resources
 
 [Linked lists part |](https://medium.com/basecs/whats-a-linked-list-anyway-part-1-d8b7e6508b9d)
 
 [linked lists part ||](https://medium.com/basecs/whats-a-linked-list-anyway-part-2-131d96f71996)
+[BIG O](https://www.educative.io/edpresso/what-is-big-o-notation)
