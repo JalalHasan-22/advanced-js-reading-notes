@@ -48,6 +48,6 @@ CDNs work through servers nearest to the website visitor respond to the request.
 
 ### Resouces
 
-[AWS S3 Docs](https://aws.amazon.com/s3/)
-[Serverless.com](https://www.serverless.com/aws-lambda)
-[AWS Lambda Docs](https://aws.amazon.com/lambda/)
+[AWS S3 Docs](https://aws.amazon.com/s3/)<br>
+[Serverless.com](https://www.serverless.com/aws-lambda)<br>
+[AWS Lambda Docs](https://aws.amazon.com/lambda/)<br>
